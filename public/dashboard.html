@@ -1,0 +1,72 @@
+<!-- dashboard.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - MongoDB</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="index.html" class="button">Cadastro</a>
+        <a href="update.html" class="button">Modificar</a>
+        <a href="delete.html" class="button">Delete</a>
+        <a href="dashboard.html" class="button">Dashboard</a>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 main">
+                <h2>User Dashboard</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                        </tr>
+                    </thead>
+                    <tbody id="userTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: '/get_users',
+                type: 'GET',
+                success: function (data) {
+                    var userTableBody = $('#userTableBody');
+                    userTableBody.empty();
+
+                    data.forEach(function (user) {
+                        userTableBody.append('<tr><td>' + user.name + '</td><td>' + user.email +
+                            '</td><td>' + user.phno + '</td></tr>');
+                    });
+                },
+                error: function (error) {
+                    console.error('Error fetching user data:', error);
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

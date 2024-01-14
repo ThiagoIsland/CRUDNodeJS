@@ -1,0 +1,20 @@
+[
+    {
+        "name": "João Silva",
+        "email": "joao@example.com",
+        "phno": "123-456-7890",
+        "password": "senha123"
+    },
+    {
+        "name": "Maria Oliveira",
+        "email": "maria@example.com",
+        "phno": "987-654-3210",
+        "password": "senha456"
+    },
+    {
+        "name": "Carlos Pereira",
+        "email": "carlos@example.com",
+        "phno": "555-123-4567",
+        "password": "senha789"
+    }
+]
