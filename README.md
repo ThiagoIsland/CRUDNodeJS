@@ -1,6 +1,6 @@
 # APLICAÇÃO WEB LIGADA AO BANCO DE DADOS (MONGODB) 
 
-Uma aplicação web (Formulário) cujo as funções servem para preencher informações, adicionar, modificar, excluir e ver um dashboard em tempo real (Em Construção) para um setor de logistica.
+Uma aplicação web (Formulário) cujo a função é demonstrar as operações CRUD (Create, Read, Update, Delete) do MongoDB e ver um dashboard em tempo real (Em Construção) para um setor de logistica.
 
 As ferramentas utilizadas para a construção desse projeto foram o banco de dados MongoDB, JavaScript, NodeJS, HTML/CSS, algumas bibliotecas como Mongoose, Body-parser e express.
 
