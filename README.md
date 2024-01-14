@@ -2,7 +2,7 @@
 
 Uma aplicação web (Formulário) cujo as funções servem para preencher informações, adicionar, modificar, excluir e ver um dashboard em tempo real (Em Construção) para um setor de logistica.
 
-As ferramentas utilizadas para a construção desse projeto foram o banco de dados MongoDB, JavaScript, HTML/CSS, algumas bibliotecas como Mongoose, Body-parser e express.
+As ferramentas utilizadas para a construção desse projeto foram o banco de dados MongoDB, JavaScript, NodeJS, HTML/CSS, algumas bibliotecas como Mongoose, Body-parser e express.
 
 *OBSERVAÇÕES* 
 - Para o utilizar o seu servidor do MongoDB vc deve trocar o endereço URL do server na linha 14 do arquivo Index.JS
