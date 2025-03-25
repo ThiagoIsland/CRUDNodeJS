@@ -17,6 +17,3 @@ As ferramentas utilizadas para a construção desse projeto foram o banco de dad
 
 #Função de Deletar
 <img width="1440" alt="Captura de Tela 2024-01-13 às 21 30 42" src="https://github.com/ThiagoIsland/Formul-rio-ligado-ao-SGBD/assets/114539167/c502408b-1105-4288-aaf7-00ac7c384075">
-
-PROJETO BASEADO NO VIDEO
-https://www.youtube.com/watch?v=_hfMmFx85KE&list=PL3ro8Es-fUHJQA01Co5Dlv7U8PxmGK4In&index=1
